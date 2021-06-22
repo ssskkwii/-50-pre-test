@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "discord.js": "^12.5.3"
+  },
+  "name": "world",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "`live/voice",
+  "license": "ISC",
+  "description": ""
+}
