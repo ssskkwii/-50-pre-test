@@ -4,7 +4,7 @@ const ayar = require('./ayar.json');
 
 var prefix = ayar.prefix;
 
-client.login('ODQzNTYzMjQ5NzI2MzkwMzIy.YKFrfw.v5yuMn7nno7Py3k-DDxrd8MVmx0');
+client.login('ODM4Nzk4NDUwMTI3Nzk4MzMy.YJAV7g.Ote-YuR5OyxtG3ptyWjqUPproJw');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`);
@@ -23,10 +23,14 @@ client.on('message', msg => {
   }
 });
 client.on('message', msg => {
-  if (msg.content.toLocaleLowerCase() ===  'lon') {
+  if (msg.content.toLocaleLowerCase() === prefix + 'on') {
     msg.delete()
   }
-});
+  client.on('message', msg => {
+    if (msg.content.toLocaleLowerCase() === prefix + 'off') {
+      msg.delete()
+    }
+  });
 client.on('message', msg => {
   if (msg.content.toLocaleLowerCase() === prefix + 'coder who') {
     msg.delete()
